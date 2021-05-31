@@ -1,2 +1,2 @@
 # content-slider-unoptimised 
-Content slider pure in React-JS not recommended though.
+Pure Content Slider in React-JS not recommended though.
