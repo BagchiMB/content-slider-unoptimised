@@ -1,0 +1,66 @@
+.SingleTeamMemList
+{
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1.5vw;
+    .SingleTeamMem
+    {
+        width:120px;
+        height:120px;
+        
+        background-size: cover;
+        background-position: center;
+
+        // margin-left: 1.5vw;
+        box-sizing: border-box;
+        border-radius: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        img 
+        {
+            cursor: pointer;
+            position: absolute;
+            right:-0.5vw;
+            top:-1vh;
+        }
+        .Add 
+        {
+            font-size:30px;
+            margin-bottom:0px;
+        }
+    }
+    .Mem-name
+    {
+        margin-top:1vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 24px;
+        width:100%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        border-radius:5px;
+        width:120px;
+    }
+    
+}
+@media (max-width: 600px)
+{
+    .SingleTeamMemList
+    {
+        width:48%;
+        .SingleTeamMem
+        {
+            width:120px;
+            height:120px;
+        }
+    }
+}

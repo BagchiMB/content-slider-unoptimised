@@ -1,0 +1,53 @@
+
+.A4 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 
+    {
+        text-align: center;
+        width:75%;
+    }
+    p 
+    {
+        margin-top:2vh;
+        text-align: center;
+        width:65%;
+    }
+    .A4-services
+    {
+        margin-top:3vh;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Team 
+    {
+        margin-top:40px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.267857px;
+        color: #0A1F44;
+    }
+    .css-2b097c-container
+    {
+        width:30%;
+        .css-yk16xz-control, .css-1pahdxg-control
+        {
+            min-height:48px;
+        }
+        .css-1uccc91-singleValue
+        {
+            color: #022047;
+        }
+        .css-26l3qy-menu
+        {
+            position: inherit;
+            z-index:3;
+            margin-top:0px;
+        }
+    }
+}

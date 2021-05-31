@@ -1,0 +1,98 @@
+.A7 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 
+    {
+        text-align: center;
+    }
+    p 
+    {
+        text-align: center;
+        width:65%;
+    }
+    .Teams 
+    {
+        padding:20px 0px;
+        width:60%;
+        justify-content: space-between;
+        display: flex;
+        border-bottom:1px solid #DDDDDD;
+        h3 
+        {
+            cursor: pointer;
+            padding:10px 0px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:30%;
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 16px;
+            color: #C4C4C4;
+        }
+        .selected
+        {
+            color:#fff;
+            background: linear-gradient(262.99deg, #24CAEE 2.54%, #9924F5 101.3%);
+        }
+    }
+    .TeamMembers
+    {
+        width:70%;
+        display: flex;
+        justify-content: center;
+        margin-top:5vh;
+    }
+}
+@media (max-width: 1024px)
+{
+    .A7 
+    {
+        .TeamMembers
+        {
+            width:100%;
+        }
+    }
+}
+@media (max-width: 600px)
+{
+    .A7 
+    {
+        p 
+        {
+            width:90%;
+        }
+        .Teams
+        {
+            width: 110%;
+            h3 
+            {
+                font-size: 16px;
+            }
+        }
+        .TeamMembers
+        {
+            flex-wrap: wrap;
+        }
+    }
+}
+.ReactModal__Overlay {
+    opacity: 0;
+    transform: translateY(-800px);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+    transform: translateY(-800px);
+  }

@@ -1,0 +1,95 @@
+.A1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 
+    {
+        text-align: center;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 52px;
+    }
+    .A1-p 
+    {
+        text-align: center;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        width:60%;
+    }
+    .A1-services
+    {
+        margin-top:1vh;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width:1024px)
+{
+    .A1 
+    {
+        .A1-services
+        {
+            width:110%;
+        }
+    }  
+}
+@media (max-width: 800px)
+{
+    .A1 
+    {
+        .A1-services
+        {
+            flex-wrap: wrap;
+            width:100%;
+        }
+    }
+    
+}
+@media (max-width: 576px)
+{
+    .A1 
+    {
+        .A1-p 
+        {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0vh;
+            width:90%;
+        }
+    }
+    
+}
+
+@keyframes slideIn 
+{
+    0%
+    {
+        transform:translateX(200%);
+        // opacity:0;
+    }
+    100%
+    {
+        // opacity:1;
+        transform:translateX(0%)
+    }
+}
+@keyframes slideOut 
+{
+    0%
+    {
+        transform:translateX(-200%);
+        // opacity:0;
+    }
+    100%
+    {
+        // opacity:1;
+        transform:translateX(0%)
+    }
+}

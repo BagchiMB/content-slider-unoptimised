@@ -1,0 +1,247 @@
+.A8 
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;;
+    h2,p 
+    {
+        text-align: center;
+    }
+    p 
+    {
+        width:65%
+    }
+    .SliderWrapper
+    {
+        height:30vh;
+        display: flex;
+        width:21%;
+        justify-content: space-between;
+        .Slider
+        {
+            height:100%;
+            .MuiSlider-markLabel
+            {
+                display: none;
+            }
+            .MuiSlider-vertical .MuiSlider-rail,.MuiSlider-vertical .MuiSlider-track
+            {
+                width:100px;
+                background: linear-gradient(267.51deg, #24CAEE -18.07%, #9924F5 156.52%);
+            }
+            .MuiSlider-vertical .MuiSlider-thumb
+            {
+                margin-bottom: -10px;
+            }
+            .MuiSlider-thumb
+            {
+                width:78px;
+                height:20px;
+                background-color: #fff;
+                border-radius:6px;
+                transform: translateX(20%);
+                display: flex;
+                flex-direction: column;
+                cursor:grab;
+            }
+            .MuiSlider-mark
+            {
+                display: none;
+            }
+            .MuiSlider-rail
+            {
+                border-radius:20px;
+                opacity:1;
+
+            }
+            .MuiSlider-track
+            {
+                border-radius:0px 0px 20px 20px;
+            }
+            .MuiSlider-vertical .MuiSlider-markLabel
+            {
+                transform: translate(150%,50%);
+            }
+            .bar 
+            {
+                background-color:black;
+                width:1vw;
+                min-height:1px;
+                display: block;
+                margin-bottom: 2px;
+            }
+        }
+        .Marker
+        {
+            height:100%;
+            position: relative;
+            li 
+            {
+                width:7vw;
+                text-align: left;
+                list-style: none;
+                right:0;
+                transform: translateY(-50%);
+                position: absolute;
+
+                font-family: Fira Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.4px;
+                color: #8C8C8C;
+
+                padding:10px;
+            }
+            li:nth-child(1)
+            {
+                top:10%;
+            }
+            li:nth-child(2)
+            {
+                top:50%;
+            }
+            li:nth-child(3)
+            {
+                top:90%;
+            }
+            .selected
+            {
+                background: linear-gradient(262.99deg, #24CAEE 2.54%, #9924F5 101.3%);
+                color:#fff;
+                padding:10px;
+                border-radius:10px;
+                position: relative;
+                &::after
+                {
+                    z-index: -1;
+                    position: absolute;
+                    border-radius:5px;
+                    top:50%;
+                    transform:translateY(-50%) rotate(45deg);   
+                    left:-8px;
+                    content: "";
+                    height:20px;
+                    width:20px;
+                    background-color: #9924f5;
+                }
+            }
+        }
+    }
+    .SliderControl
+    {
+        width:12%;
+        display: flex;
+        justify-content: space-between;
+        margin-top:5vh;
+        div 
+        {
+            width:60px;
+            height:60px;
+            background: #FDFDFD;
+            border: 1px solid #B5B5B5;
+            border-radius:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:30px;
+            cursor: pointer;
+        }
+    }
+}
+@media (max-width: 1366px)
+{
+    .A8 
+    {
+        .SliderWrapper
+        {
+            width:25%;
+            .Marker 
+            {
+                li 
+                {
+                    width:8vw;
+                }
+            }
+        }
+        .SliderControl
+        {
+            width:15%;
+        }
+        
+    }
+}
+@media (max-width: 1024px)
+{
+    .A8 
+    {
+        .SliderWrapper
+        {
+            width:32%;
+            .Marker 
+            {
+                li 
+                {
+                    width:10vw;
+                }
+            }
+        }
+        .SliderControl
+        {
+            width:20%;
+        }
+        
+    }
+}
+@media (max-width: 800px)
+{
+    .A8 
+    {
+        margin-bottom: 8vh;
+        .SliderWrapper
+        {
+            width:40%;
+            .Marker 
+            {
+                li 
+                {
+                    width:15vw;
+                }
+            }
+        }
+        .SliderControl
+        {
+            width:25%;
+        }
+        
+    }
+}
+@media (max-width: 600px)
+{
+    .A8 
+    {
+        p 
+        {
+            width:90%;
+        }
+        .SliderWrapper
+        {
+            width:70%;
+            .Marker 
+            {
+                li 
+                {
+                    width:25vw;
+                }
+            }
+        }
+        .SliderControl
+        {
+            width:40%;
+        }
+        
+    }
+}

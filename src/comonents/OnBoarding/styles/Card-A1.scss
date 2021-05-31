@@ -1,0 +1,130 @@
+
+.Card-A1
+{
+    border: 3px dashed #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:24%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height:375px;
+    cursor: pointer;
+
+    .Image 
+    {
+        margin-top:20px;
+        width:200px;
+        height:200px;
+        border-radius: 100px;
+        background-color: #F2F2F2;
+        overflow: hidden;
+        .Build1 
+        {
+            margin-left:25px;
+            margin-top:40px;
+        }
+        .Build2 
+        {
+            margin-top:45px;
+        }
+    }
+    h3 
+    {
+        margin-top:30px;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        width:70%;
+    }
+    p 
+    {
+        font-family: Circular Std;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #8894A8;
+        width:60%;
+    }
+    
+}
+@media (max-width: 1024px)
+{
+    .Card-A1
+    {
+        width:20vw;
+        .Image 
+        {
+            width:150px;
+            height:150px;
+        }
+        h3  
+        {
+            width:90%;
+        }
+        p 
+        {
+            width:80%;
+        }
+        
+    }
+}
+@media (max-width: 800px)
+{
+    .Card-A1
+    {
+        width:40vw;
+        margin-bottom: 2vh;
+        h3 
+        {
+            width:65%;
+        }
+        p 
+        {
+            width: 60%;;
+        }
+        
+    }
+}
+@media (max-width:576px)
+{
+    .Card-A1
+    {
+        height:275px;
+        .Image 
+        {
+            width:100px;
+            height:100px;
+            .Build1 
+            {
+                margin-left:0px;
+                margin-top:10px;
+            }
+            .Build2 
+            {
+                margin-top:10px;
+            }
+        }
+        h3
+        {
+            font-size: 13px;
+            width:80%;
+            line-height: 16px;
+        }
+        p 
+        {
+            width:90%;
+            font-size: 11px;
+            line-height: 15px;
+        }
+    }
+}

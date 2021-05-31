@@ -1,0 +1,129 @@
+.Next
+{
+    position: absolute;
+    bottom:2vh;
+    left:50%;
+    transform:translateX(-50%);
+    width:25%;
+    animation: slideUp 500ms linear 1.25s backwards;
+    .Next-btn-wrapper 
+    {
+        display: flex;
+        justify-content: space-around;
+        width:100%;
+        .Next-btn 
+        {
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            button 
+            {
+                width:48%;
+                height:60px;
+                border-radius:10px;
+                border:0px solid transparent;
+                outline:none;
+                position: relative;
+            }
+            .prev-btn 
+            {
+                border: 1px solid #B5B5B5;
+                background-color: #fdfdfd;
+            }
+            .text 
+            {
+                position: absolute;
+                left:5%;
+                top:50%;
+                transform: translateY(-50%);
+            }
+            .lt,.gt 
+            {
+                position: absolute;
+                right:10%;
+                top:50%;
+                transform: translateY(-50%);
+                font-size:20px;
+            }
+            .next-btn
+            {
+
+                color:white;
+                font-size:1rem;
+                background: linear-gradient(262.99deg, #24CAEE 2.54%, #9924F5 101.3%);
+            }
+        }
+    }   
+    .Progress-bar
+    {
+        margin-top: 1vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Bar 
+        {
+            width:90%;
+            border-radius: 14px;
+            background: linear-gradient(262.99deg, #24CAEE 2.54%, #9924F5 101.3%);
+            height:1rem;
+            display: flex;
+            justify-content: flex-end;
+            .Remain 
+            {
+                transition: all 0.5s linear;
+                background-color: #fff;
+                opacity: 0.7;
+                height:100%;
+            }
+        }
+    }
+}
+@media (max-width: 1024px)
+{
+    .Next 
+    {
+        width:40%;
+    }
+}
+@media (max-width: 800px)
+{
+    .Next
+    {
+        position: relative;
+        margin-top:2vh;
+        width:50%;
+    }
+}
+@media (max-width: 576px)
+{
+    .Next 
+    {
+        width:70%;
+        .Next-btn-wrapper 
+        {
+            .Next-btn 
+            {
+                button
+                {
+                    height:60px;
+                }
+            }
+        }
+        .Progress-bar
+        {
+            margin-top:1vh;
+        }
+    }
+}
+
+@keyframes slideUp 
+{
+    0%
+    {
+        opacity:0;
+    }
+    100%
+    {
+        opacity:1;
+    }
+}

@@ -1,0 +1,62 @@
+.onBoarding 
+{
+    .ContentWrapper
+    {
+        margin-top:4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%; 
+        overflow: hidden;   
+        .Content
+        {
+            // position: absolute;
+            top:45vh;
+            left:50%;
+            width:75%;
+            // transform: translate(-50%,-50%);
+            .slideIn 
+            {
+                animation: slideIn 500ms ease-out backwards;
+            }
+            .slideOut
+            {
+                animation: slideOut 500ms ease-out backwards;
+            }    
+        }
+    }
+    
+}
+@media (max-width: 1024px)
+{
+    .onBoarding 
+    {
+        .ContentWrapper
+        {
+            margin-top:2vh;
+        }   
+    }
+}
+@media (max-width: 800px)
+{
+    .onBoarding 
+    {
+        .ContentWrapper
+        {
+            .Content
+            {
+                width: 85%;
+            }
+        }
+    }
+}
+@media (max-width: 600px)
+{
+    .onBoarding 
+    {
+        .ContentWrapper
+        {
+            margin-top:5vh;
+        }   
+    }
+}

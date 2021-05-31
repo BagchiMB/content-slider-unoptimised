@@ -1,0 +1,73 @@
+.SelectTeam
+{
+    .BackBtn
+    {
+        position: absolute;
+        top:6vh;
+        right:5vw;
+        width:8vw;
+        height:46px;
+        border-radius:10px;
+        color:white;
+        font-size:1rem;
+        background: linear-gradient(262.99deg, #24CAEE 2.54%, #9924F5 101.3%);
+        outline:none;
+        border:0px solid transparent;
+    }
+    .content
+    {
+        margin-top:5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .tag 
+        {
+            text-align: center;
+            width:35%;
+        }
+    }
+    .TeamcardWrapper 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Teamcard 
+        {
+            padding-left:5vw;
+            width:95%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    
+}
+@media (max-width: 1024px)
+{
+    .SelectTeam
+    {
+        .TeamcardWrapper 
+        {
+            .Teamcard
+            {
+                width:100%;
+            }
+        }
+    }
+}
+@media (max-width: 600px)
+{
+    .SelectTeam
+    {
+        .BackBtn
+        {
+            width:20vw;
+        }
+        .content
+        {
+            .tag 
+            {
+                width:90%;
+            }
+        }
+    }
+}

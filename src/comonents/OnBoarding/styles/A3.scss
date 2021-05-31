@@ -1,0 +1,75 @@
+.A3
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 
+    {
+        margin-top:15vh;
+        text-align: center;
+        width:55%;
+        margin-bottom:5vh;
+    }
+    input 
+    {
+        margin-bottom:3vh;
+
+        padding:0 20px;
+        width:480px;
+        height:68px;
+        border: 1px solid #E1E4E8;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        color: #0A1F44;
+
+        outline:none;
+
+        &:focus 
+        {
+            border:1px solid #906BF1;
+        }
+
+        &::placeholder
+        {
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.5px;
+            color: #A4AEBD;
+        }
+    }
+}
+@media (max-width: 600px)
+{
+    .A3 
+    {
+        margin-top:10vh;
+        .FirstInp 
+        {
+            margin-top:5vh;
+        }
+        .SecInp 
+        {
+            margin-bottom:10vh;
+        }
+        input 
+        {
+            width:80vw;
+            height:6vh;
+            font-size: 16px;
+            &::placeholder
+            {
+                font-size: 16px;
+            }
+        }
+    }
+}

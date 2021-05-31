@@ -1,0 +1,58 @@
+.Card-A5 
+{
+    width:22%;
+    .css-2b097c-container
+    {
+        width:100%;
+        .css-yk16xz-control, .css-1pahdxg-control
+        {
+            min-height:48px;
+            border-radius:10px;
+        }
+        .css-1uccc91-singleValue
+        {
+            color: #022047;
+        }
+        .css-26l3qy-menu
+        {
+            position: inherit;
+            z-index:3;
+            margin-top:0px;
+        }
+        .css-1okebmr-indicatorSeparator
+        {
+            display: none;
+        }
+        .css-6q0nyr-Svg 
+        {
+            display: none;
+        }
+    }
+}
+@media (max-width: 600px)
+{
+    .Card-A5 
+    {
+        position: relative;
+        width:48%;
+        // overflow:auto;
+        .css-2b097c-container
+        {
+            .css-26l3qy-menu
+            {
+                position: relative;
+                .css-4ljt47-MenuList
+                {
+                    position: absolute;
+                    z-index:78324;
+                    width:100%;
+                    background-color: #fff;
+                    border-radius: 4px;
+                    box-shadow: 0 0 0 1px hsla(0,0%,0%,0.1), 0 4px 11px hsla(0,0%,0%,0.1);
+                    max-height: 140px;
+                }
+            }
+            
+        }
+    }
+}

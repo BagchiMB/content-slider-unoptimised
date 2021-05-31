@@ -1,0 +1,144 @@
+
+.PersonCard
+{
+    // width:286px;
+    width:20%;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px -5px rgba(190, 190, 190, 0.25);
+    border-radius: 19px;
+    margin-right:4vw;
+    margin-bottom:4vh;
+    cursor: pointer;
+
+    background-clip: padding-box;
+    position: relative;
+    box-sizing: border-box;
+    background:#fff;
+
+    border:3px solid transparent;
+    img 
+    {
+        width:100%;
+    }
+    div 
+    {
+        padding:20px;
+        p 
+        {
+            margin-bottom:0;
+        }
+        h3 
+        {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.4px;
+            color: #0A1F44;
+            margin-bottom:0rem;
+        }
+        .desig 
+        {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: #A4AEBD;
+            margin-bottom:1vh;
+        }
+        .desc 
+        {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.214286px;
+            color: #53627C;
+            margin-bottom:1vh;
+
+        }
+        .skillsets
+        {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: #A4AEBD;
+        }
+        .skills 
+        {
+            padding:10px 0px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            p 
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:30%;
+                border: 1px solid #DFE3E9;
+                box-sizing: border-box;
+                border-radius: 12px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 15px;
+                color: #495469;
+                margin-bottom:0.5vh;
+            }
+            
+        }
+        .LastCol 
+        {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1vh;
+            .Ask 
+            {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 16px;
+                color: #A4AEBD;
+            }
+            .Tell 
+            {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 16px;
+                text-align: right;
+                color: #000000;
+            }
+        }
+        
+    }
+    
+}
+.selected-PersonCard  
+{
+    border:3px solid #9924F5;
+}
+@media (max-width: 1024px)
+{
+    .PersonCard
+    {
+        width:28%;
+    }
+}
+@media (max-width: 800px)
+{
+    .PersonCard
+    {
+        width:45%;
+    }
+}
+@media (max-width: 600px)
+{
+    .PersonCard
+    {
+        width:100%;
+    }
+}

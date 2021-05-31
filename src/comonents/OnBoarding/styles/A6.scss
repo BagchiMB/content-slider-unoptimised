@@ -1,0 +1,122 @@
+.A6 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:2vh;
+    margin-top:12vh;
+    h2 
+    {
+        text-align: center;
+    }
+    p 
+    {
+        width:65%;
+        text-align: center;
+    }
+    .date-selection
+    {
+        margin-top:5vh;
+        display: flex;
+        width:60%;
+        justify-content: space-between;
+        padding-bottom: 2vh;
+
+    }
+    .datePicker 
+    {
+        width:20vw;
+        height:70px;
+        .Box 
+        {
+            width:100%;
+        }
+        .react-datepicker-wrapper
+        {
+            opacity: 0;
+            position: relative;
+            top:-6vh;
+            width:100%;
+            .react-datepicker__input-container
+            {
+                input 
+                {
+                    cursor: pointer;
+                    width:100%;
+                    height:55px;
+                }
+                
+            }
+        }        
+    }
+    .Box 
+        {
+
+            cursor: pointer;
+            width:30%;
+            text-align: center;
+            height:55px;
+            border-radius:28px;
+            border: 1px solid #E1E4E8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-clip: padding-box;
+            position: relative;
+            box-sizing: border-box;
+            background:#fff;
+
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.4px;
+            color: #022047;
+        }
+        .selected 
+        {
+            // border:3px solid transparent;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                z-index: -1;
+                margin: -3px; 
+                border-radius: inherit; 
+                background: linear-gradient(to left, #24CAEE, #9924F5);
+            }
+        }
+}
+@media (max-width: 1024px)
+{
+    .A6 
+    {
+        .datePicker 
+        {
+            width:40vw;
+        }
+    }
+}
+@media (max-width: 600px)
+{
+    .A6 
+    {
+        margin-bottom: 20vh;
+        p 
+        {
+            width:90%;
+        }
+        .date-selection
+        {
+            margin-top:1vh;
+            width:100%;
+        }
+        .datePicker 
+        {
+            width:70vw;
+        }
+    }
+}
